@@ -23,3 +23,20 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.btn {
+  display: inline-block;
+  @extend %poppins-500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1B1C2A;
+  padding: 16px 48px;
+  background-color: $yellow;
+  border-radius: 40px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #FDE4A6;
+    color: #1B1C2B;
+  }
+}
