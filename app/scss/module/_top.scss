@@ -1,0 +1,51 @@
+.top {
+  background-color: $tintBlue;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    padding: 126px 0 128px;
+  }
+
+  &__content-title {
+    max-width: 582px;
+    @extend %heading-h1;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+  }
+
+  &__content-text {
+    max-width: 562px;
+    @extend %body-2;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-bottom: 48px;
+  }
+
+  &__content-link+.top__content-link {
+    margin-left: 40px;
+    @extend %label-2;
+    color: #FFFFFF;
+    padding-right: 41px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 12px;
+      right: 0;
+      top: 6px;
+      background-image: url('../../images/icons/arrow-right.svg');
+
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
