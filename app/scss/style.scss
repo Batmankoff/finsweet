@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -9,6 +10,12 @@
 @import 'module/_header';
 @import 'module/_top';
 @import 'module/_work';
+@import 'module/_projects';
+@import 'module/_design';
+@import 'module/_reviews';
+@import 'module/_questions';
+@import 'module/_inquiry';
+@import 'module/_blog';
 @import 'module/_footer';
 
 

@@ -1,0 +1,132 @@
+.projects {
+  padding: 128px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  &__top-title {
+    @extend %heading-h2;
+  }
+
+  &__top-link {
+    display: inline-block;
+    @extend %label-1;
+    color: $darkBlue;
+    padding-right: 41px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 12px;
+      top: 10px;
+      right: 0;
+      background-image: url('../images/icons/arrow-darkBlue.svg');
+    }
+  }
+
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 32px 23px;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    &:hover {
+
+      .projects__item-bigbox,
+      .projects__item-minbox {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__item-bigbox {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 35px 76px 48px;
+    transform: translateX(-200%);
+    transition: all .5s;
+  }
+
+  &__item-minbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 56px;
+    padding-bottom: 45px;
+    transform: translateX(-200%);
+    transition: all .5s;
+
+    .projects__item-title {
+      max-width: 216px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item-title {
+    @extend %poppins-600;
+    max-width: 313px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+
+  &__item-text {
+    @extend %body-2;
+    color: #FFFFFF;
+    opacity: 0.8;
+    max-width: 296px;
+    margin-bottom: 40px;
+  }
+
+  &__item-link {
+    @extend %body-2;
+    color: $yellow;
+    padding-right: 41px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 12px;
+      top: 8px;
+      left: 116px;
+
+      background-image: url('../images/icons/arrow-yellow.svg');
+    }
+  }
+
+  &__item-img {
+    object-fit: cover;
+
+  }
+}
