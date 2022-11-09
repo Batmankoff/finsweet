@@ -1,0 +1,55 @@
+.blog {
+  padding: 128px 0;
+
+  &__title {
+    @extend %heading-h2;
+    margin-bottom: 64px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 405px;
+  }
+
+  &__item-link__img {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__item-date {
+    @extend %label-2;
+    opacity: 0.7;
+    margin-bottom: 16px;
+  }
+
+  &__item-title {
+    @extend %heading-h6;
+    margin-bottom: 16px;
+  }
+
+  &__item-text {
+    opacity: 0.7;
+    margin-bottom: 32px;
+  }
+
+  &__item-link {
+    display: inline-block;
+    color: $darkBlue;
+    padding-right: 37px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 12px;
+      right: 0;
+      top: 8px;
+      background-image: url('../images/icons/arrow-darkBlue.svg');
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.design {
+  padding: 128px 0;
+  background-color: $grey;
+
+  &__subtitle {
+    @extend %label-2;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+    @extend %heading-h2;
+    margin-bottom: 48px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px 32px;
+  }
+
+  &__item {
+    max-width: 405px;
+    background-color: #fff;
+    padding: 53px 33px 48px 48px;
+  }
+
+  &__item-title {
+    @extend %heading-h6;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+
+  &__item-text {
+    max-width: 324px;
+    opacity: 0.7;
+  }
+}
