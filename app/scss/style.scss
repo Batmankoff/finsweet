@@ -5,9 +5,12 @@
 @import 'global';
 
 
-/* index */
+
 
 @import 'module/_header';
+
+/* index */
+
 @import 'module/_top';
 @import 'module/_work';
 @import 'module/_projects';
@@ -16,6 +19,13 @@
 @import 'module/_questions';
 @import 'module/_inquiry';
 @import 'module/_blog';
+
+/* contact */
+
+@import 'module/_contact';
+
+/* contact */
+
 @import 'module/_footer';
 
 

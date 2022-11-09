@@ -41,3 +41,21 @@ body {
     color: #1B1C2B;
   }
 }
+
+.btn-2 {
+  display: inline-block;
+  @extend %poppins-500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  padding: 16px 48px;
+  background-color: $darkBlue;
+  border-radius: 40px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #535460;
+  }
+}
