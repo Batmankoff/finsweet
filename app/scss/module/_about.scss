@@ -1,0 +1,29 @@
+.about {
+  padding: 128px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__content {
+    max-width: 592px;
+  }
+
+  &__content-subtitle {
+    @extend %label-1;
+    margin-bottom: 8px;
+  }
+
+  &__content-title {
+    @extend %heading-h1;
+    margin-bottom: 31px;
+  }
+
+  &__content-text {
+    max-width: 484px;
+    opacity: 0.7;
+  }
+}

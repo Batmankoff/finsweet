@@ -1,0 +1,47 @@
+.mission {
+  padding: 128px 0;
+  background-color: $accent;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item+.mission__item {
+    margin-top: 96px;
+
+    .mission__item-content {
+      max-width: 649px;
+
+      .mission__item-title {
+        padding-left: 28px;
+
+      }
+
+      .mission__item-text {
+        padding-left: 28px;
+      }
+    }
+  }
+
+  &__item-content {
+    max-width: 623px;
+  }
+
+  &__item-subtitle {
+    @extend %label-2;
+    margin-bottom: 16px;
+  }
+
+  &__item-title {
+    max-width: 623px;
+    @extend %heading-h3;
+    margin-bottom: 16px;
+  }
+
+  &__item-text {
+    max-width: 623px;
+    opacity: 0.7;
+  }
+}
