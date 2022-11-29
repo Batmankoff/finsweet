@@ -1,0 +1,37 @@
+.features {
+  padding: 128px 0;
+  background-color: $tintBlue;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+
+  &__content {
+    max-width: 562px;
+  }
+
+  &__content-title {
+    @extend %heading-h1;
+    max-width: 468px;
+    margin-bottom: 32px;
+  }
+
+  &__content-text {
+    @extend %body-2;
+    opacity: 0.7;
+    margin-bottom: 32px;
+  }
+}
+
+.features-working.working{
+  padding: 0;
+ .working__clients{
+  padding: 98px 0;
+ }
+ .working__items{
+  margin-bottom: 0;
+ }
+}

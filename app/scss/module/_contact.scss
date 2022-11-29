@@ -1,0 +1,90 @@
+.contact {
+  padding: 128px 0;
+
+  &__title {
+    @extend %heading-h2;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    opacity: 0.7;
+    text-align: center;
+    max-width: 562px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+
+  &__form {
+    max-width: 1062px;
+    margin: 0 auto;
+    padding: 55px 77px 69px;
+    background-color: $grey;
+    border-radius: 12px;
+  }
+
+  &__form-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 32px;
+    margin-bottom: 16px;
+  }
+
+  &__label {
+    width: 438px;
+    color: #000;
+    @extend %label-1;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 18px 32px;
+
+    &::placeholder {
+      @extend %poppins-400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #000000;
+
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__label-textarea {
+    display: block;
+    max-width: 908px;
+    color: #000;
+    @extend %label-1;
+    margin-bottom: 32px;
+  }
+
+  &__textarea {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    resize: none;
+    height: 139px;
+    padding-top: 18px;
+    padding-left: 32px;
+
+    &::placeholder {
+      @extend %poppins-400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #000000;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+}
