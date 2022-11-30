@@ -1,0 +1,17 @@
+.order{
+  padding: 128px 0;
+  text-align: center;
+  &__title{
+    max-width: 730px;
+    margin: 0 auto;
+    @extend %heading-h2;
+    margin-bottom: 20px;
+  }
+  &__text{
+    max-width: 562px;
+    margin: 0 auto;
+    @extend %body-2;
+    opacity: 0.7;
+    margin-bottom: 40px;
+  }
+}

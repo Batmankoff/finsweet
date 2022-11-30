@@ -7,8 +7,10 @@
   }
 
   &__items {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    grid-gap: 64px 32px;
   }
 
   &__item {
@@ -51,5 +53,12 @@
       top: 8px;
       background-image: url('../images/icons/arrow-darkBlue.svg');
     }
+  }
+}
+
+.blog.blog-page {
+  .blog__title {
+    margin-bottom: 48px;
+    text-align: center;
   }
 }

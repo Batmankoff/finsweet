@@ -1,0 +1,42 @@
+.featured-blog {
+  padding-top: 128px;
+  text-align: center;
+
+  &__title {
+    max-width: 949px;
+    margin: 0 auto;
+    @extend %heading-h2;
+    margin-bottom: 16px;
+  }
+  &__info{
+    @extend %label-2;
+    margin-bottom: 32px;
+  }
+
+  &__author {
+    margin-right: 6px;
+    display: inline-block;
+    color: $darkBlue;
+    opacity: 0.87;
+  }
+
+  &__date {
+     display: inline-block;
+  }
+
+  &__img {
+    margin-bottom: 48px;
+  }
+
+  &__text {
+    max-width: 831px;
+    margin: 0 auto;
+    opacity: 0.7;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    color: $royalBlue;
+    opacity: 0.7;
+  }
+}

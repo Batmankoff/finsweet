@@ -1,0 +1,39 @@
+.portfolio {
+  padding: 98px 0;
+  text-align: center;
+  background-color: $grey;
+
+  &__subtitle {
+    @extend %body-2;
+    opacity: 0.7;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    @extend %heading-h2;
+    margin-bottom: 24px;
+
+  }
+
+  &__text {
+    @extend %body-2;
+    opacity: 0.7;
+    max-width: 733px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-item+.portfolio__social-item {
+    margin-left: 28px;
+  }
+
+  &__social-link {
+    font-size: 0;
+  }
+}
