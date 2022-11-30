@@ -1,0 +1,72 @@
+.works {
+  padding-top: 96px;
+
+  &__filter-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: #fff;
+    padding: 0;
+    @extend %label-1;
+    color: $darkBlue;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &__btn+.works__btn {
+    margin-left: 32px;
+  }
+
+  .mixitup-control-active {
+    color: $royalBlue;
+    opacity: 1;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 64px 32px;
+  }
+
+  &__item {
+    max-width: 623px;
+  }
+
+  &__item-img {
+    padding: 30px 39px 33px;
+    margin-bottom: 24px;
+  }
+
+  &__item-title {
+    @extend %heading-h3;
+    margin-bottom: 12px;
+  }
+
+  &__item-text {
+    opacity: 0.7;
+    margin-bottom: 24px;
+  }
+
+  &__item-link {
+    color: $darkBlue;
+    line-height: 150%;
+    @extend %poppins-500;
+    padding-right: 41px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 12px;
+      right: 0;
+      top: 6px;
+      background-image: url('../images/icons/arrow-darkBlue.svg');
+    }
+  }
+}

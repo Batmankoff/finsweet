@@ -12,7 +12,7 @@
 /* index */
 
 @import 'module/_top';
-@import 'module/_work';
+@import 'module/_stages';
 @import 'module/_projects';
 @import 'module/_design';
 @import 'module/_reviews';
@@ -35,6 +35,14 @@
 /* features */
 @import 'module/_features';
 @import 'module/_advantages';
+
+
+/* work*/
+@import 'module/_portfolio';
+@import 'module/_works';
+@import 'module/_order';
+
+
 /* contact */
 
 @import 'module/_contact';
