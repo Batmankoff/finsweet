@@ -1,7 +1,9 @@
 $(function () {
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
 
-
- $('.questions__item-box').on('click', function () {
+  $('.questions__item-box').on('click', function () {
     $(this).next().slideToggle();
     $(this).toggleClass('questions__item-box--active');
   });
