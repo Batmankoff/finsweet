@@ -325,15 +325,17 @@
       flex-direction: column;
     }
   }
-   .blog {
+
+  .blog {
     &__items {
       grid-template-columns: 1fr;
     }
-    &__item{
+
+    &__item {
       margin: 0 auto;
     }
   }
-  
+
 }
 
 
@@ -473,7 +475,28 @@
 
 }
 
-@media (max-width: 460px) {
+@media (max-width: 467px) {
+  .header {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    .menu__list {
+      top: 56px;
+    }
+
+    .user-nav {
+      display: none;
+    }
+  }
+
+  .footer-top {
+    &__contacts {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
   .top {
     &__content-links {
       display: flex;
@@ -498,26 +521,7 @@
 
 
 @media (max-width: 446px) {
-  .header {
-    &__inner {
-      flex-wrap: wrap;
-    }
 
-    .menu__list {
-      top: 56px;
-    }
-
-    .user-nav {
-      display: none;
-    }
-  }
-
-  .footer-top {
-    &__contacts {
-      flex-direction: column;
-      gap: 15px;
-    }
-  }
 
   .reviews-slider {
     &__item {
