@@ -1,3 +1,79 @@
+@media (max-width: 1320px) {
+  .reviews {
+    &__inner {
+      justify-content: space-between;
+    }
+
+    &__content {
+      margin-right: 15px;
+    }
+
+    &-slider {
+      max-width: 743px;
+    }
+  }
+
+  .inquiry {
+    text-align: center;
+
+    &__send-text {
+      max-width: 100%;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__content-title {
+      width: 100%;
+    }
+
+    &__content-text {
+      max-width: 100%;
+    }
+
+    &__send-form {
+      display: grid;
+      justify-items: center;
+
+    }
+
+    &__send-btn,
+    &__send-link {
+      max-width: 432px;
+    }
+
+    &__send-link {
+      padding-right: 41px;
+
+      &::before {
+        right: 0;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1220px) {
+  .questions {
+    &__inner {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    &__content,
+    &__items {
+      margin: 0 auto;
+    }
+
+    &__content-title {
+      max-width: 100%;
+    }
+  }
+
+
+}
+
 @media (max-width: 1200px) {
   .top {
     &__content {
@@ -8,7 +84,29 @@
       max-width: 50%;
     }
   }
+
+
 }
+
+@media (max-width: 1160px) {
+  .reviews {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+
+    &-slider {
+      max-width: 100%;
+    }
+  }
+}
+
+
 
 
 @media (max-width: 1060px) {
@@ -27,6 +125,14 @@
       max-width: 40%;
     }
   }
+
+  .design {
+    &__item {
+      padding: 33px;
+    }
+  }
+
+
 }
 
 @media (max-width: 1030px) {
@@ -124,6 +230,17 @@
     }
   }
 
+  .design {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .blog {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 
@@ -156,7 +273,12 @@
   }
 
   .stages,
-  .projects {
+  .projects,
+  .design,
+  .reviews,
+  .questions,
+  .inquiry,
+  .blog {
     padding: 64px 0;
   }
 
@@ -175,6 +297,43 @@
     }
   }
 
+  .questions {
+    &__item {
+      padding: 20px;
+    }
+
+    &__item-num {
+      margin-right: 20px;
+    }
+  }
+
+  .inquiry {
+    &__content {
+      padding: 50px;
+    }
+
+    &__send {
+      padding: 30px;
+    }
+  }
+
+}
+
+@media (max-width: 720px) {
+  .questions {
+    &__item {
+      flex-direction: column;
+    }
+  }
+   .blog {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+    &__item{
+      margin: 0 auto;
+    }
+  }
+  
 }
 
 
@@ -195,6 +354,45 @@
     &__top {
       flex-direction: column;
       gap: 15px;
+    }
+  }
+
+  .design {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    &__item {
+      margin: 0 auto;
+    }
+  }
+
+  .reviews {
+    &__content {
+      text-align: center;
+    }
+  }
+
+  .reviews-slider {
+    &__item-blockquote {
+      font-size: 22px;
+      line-height: 38px;
+      text-align: center;
+    }
+  }
+
+  .questions {
+    &__item-title {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .inquiry {
+    &__content-title {
+      font-size: 44px;
+      line-height: 60px;
     }
   }
 }
@@ -231,6 +429,45 @@
     &__item-title {
       font-size: 18px;
       line-height: 24px;
+    }
+  }
+
+  .design {
+    &__title {
+      font-size: 38px;
+      line-height: 52px;
+    }
+  }
+
+  .inquiry {
+    &__send {
+      padding: 10px;
+    }
+
+    &__send-input {
+      max-width: 432px;
+      width: 100%;
+      padding: 10px;
+    }
+
+    &__send-btn {
+      padding: 16px 48px;
+    }
+  }
+
+
+}
+
+@media (max-width: 520px) {
+  .questions {
+    &__item-box {
+      position: relative;
+    }
+
+    &__item-close {
+      position: absolute;
+      top: -31px;
+      right: 0;
     }
   }
 
@@ -282,6 +519,12 @@
     }
   }
 
+  .reviews-slider {
+    &__item {
+      padding-bottom: 68px;
+    }
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -311,4 +554,10 @@
 
   }
 
+  .questions {
+    &__item-text {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
 }
