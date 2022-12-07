@@ -5,7 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 32px;
     margin-bottom: 48px;
+    flex-wrap: wrap;
   }
 
   &__btn {
@@ -18,9 +20,7 @@
     cursor: pointer;
   }
 
-  &__btn+.works__btn {
-    margin-left: 32px;
-  }
+
 
   .mixitup-control-active {
     color: $royalBlue;

@@ -313,7 +313,8 @@
   }
 
   .about,
-  .pricing {
+  .pricing,
+  .portfolio {
     margin-top: 96px;
   }
 
@@ -377,7 +378,9 @@
   .working,
   .team,
   .advantages,
-  .pricing {
+  .pricing,
+  .portfolio,
+  .order {
     padding: 64px 0;
   }
 
@@ -462,6 +465,13 @@
     &__item {
       max-width: 100%;
     }
+  }
+
+  .works {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+
   }
 }
 
@@ -590,6 +600,13 @@
     }
 
   }
+
+  .order {
+    &__title {
+      font-size: 42px;
+      line-height: 58px;
+    }
+  }
 }
 
 @media (max-width: 520px) {
@@ -656,7 +673,8 @@
     &__item {
       height: 100%;
       padding: 30px;
-      &::before{
+
+      &::before {
         right: -218px;
         height: 480px;
       }
