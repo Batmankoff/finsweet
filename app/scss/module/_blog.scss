@@ -14,7 +14,8 @@
   }
 
   &__item {
-    width: 405px;
+    max-width: 405px;
+    width: 100%;
   }
 
   &__item-link__img {

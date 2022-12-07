@@ -8,9 +8,19 @@
     padding: 16px 0;
   }
 
+  .logo {
+    margin-right: 32px;
+  }
+
   .menu {
     margin-left: auto;
+
+    &__btn {
+      display: none;
+    }
   }
+
+
 
   .user-nav {
     margin-left: 48px;
@@ -22,10 +32,8 @@
   &__list {
     display: flex;
     align-items: center;
-  }
+    gap: 32px;
 
-  &__list-item+.menu__list-item {
-    margin-left: 32px;
   }
 
   &__list-link {

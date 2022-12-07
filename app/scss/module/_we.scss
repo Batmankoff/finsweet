@@ -5,15 +5,13 @@
     align-items: flex-end;
     background-color: #F4F5F5;
     padding: 80px 0;
+    gap: 60px;
   }
 
   &__item {
     max-width: 515px;
   }
 
-  &__item+.we__item {
-    margin-left: 61px;
-  }
 
   &__item-subtitle {
     @extend %label-2;
