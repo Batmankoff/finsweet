@@ -314,7 +314,9 @@
 
   .about,
   .pricing,
-  .portfolio {
+  .portfolio,
+  .featured-blog,
+  .contact {
     margin-top: 96px;
   }
 
@@ -380,8 +382,14 @@
   .advantages,
   .pricing,
   .portfolio,
-  .order {
+  .order,
+  .featured-blog,
+  .contact
+   {
     padding: 64px 0;
+  }
+  .blog-one{
+    padding-bottom: 64px;
   }
 
   .features {
@@ -533,6 +541,14 @@
       line-height: 60px;
     }
   }
+
+  .featured-blog {
+    &__title {
+      max-width: 100%;
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
 }
 
 
@@ -607,6 +623,11 @@
       line-height: 58px;
     }
   }
+  .contact {
+    &__form {
+      padding: 30px;
+    }
+  }
 }
 
 @media (max-width: 520px) {
@@ -628,10 +649,6 @@
   .header {
     &__inner {
       flex-wrap: wrap;
-    }
-
-    .menu__list {
-      top: 56px;
     }
 
     .user-nav {
@@ -744,5 +761,10 @@
       font-size: 16px;
       line-height: 1;
     }
+  }
+    .contact {
+   &__input {
+    padding: 16px;
+   }
   }
 }
