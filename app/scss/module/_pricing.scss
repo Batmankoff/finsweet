@@ -18,6 +18,7 @@
   &__items {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
   }
 
@@ -78,6 +79,7 @@
     @extend %poppins-600;
     color: $grey;
     padding: 16px 78px;
+    z-index: 5;
   }
 
   &__item--center {

@@ -65,6 +65,16 @@
   }
 }
 
+@media (max-width: 1240px) {
+  .pricing {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+  }
+}
+
 @media (max-width: 1220px) {
   .questions {
     &__inner {
@@ -302,7 +312,8 @@
     }
   }
 
-  .about {
+  .about,
+  .pricing {
     margin-top: 96px;
   }
 
@@ -365,7 +376,8 @@
   .mission,
   .working,
   .team,
-  .advantages {
+  .advantages,
+  .pricing {
     padding: 64px 0;
   }
 
@@ -637,6 +649,29 @@
       text-align: center;
     }
   }
+
+  .pricing {
+
+
+    &__item {
+      height: 100%;
+      padding: 30px;
+      &::before{
+        right: -218px;
+        height: 480px;
+      }
+    }
+
+    &__item-link {
+      padding: 16px 48px;
+    }
+
+    &__item-price {
+      font-size: 28px;
+      line-height: 44px;
+      flex-direction: column;
+    }
+  }
 }
 
 
@@ -682,6 +717,14 @@
     &__item-text {
       font-size: 16px;
       line-height: 28px;
+    }
+  }
+
+  .pricing {
+    &__item-link {
+      padding: 16px;
+      font-size: 16px;
+      line-height: 1;
     }
   }
 }
