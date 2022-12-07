@@ -82,6 +82,11 @@
     }
   }
 
+  .features {
+    &__img {
+      max-width: 50%;
+    }
+  }
 
 }
 
@@ -162,6 +167,17 @@
 
   }
 
+  .features {
+    &__img {
+      max-width: 50%;
+    }
+  }
+
+  .advantages {
+    &__item-img {
+      max-width: 50%;
+    }
+  }
 }
 
 @media (max-width: 1030px) {
@@ -169,6 +185,13 @@
     &__inner {
       flex-direction: column;
       gap: 40px;
+    }
+  }
+
+  .features {
+    &__content-title {
+      font-size: 48px;
+      line-height: 68px;
     }
   }
 }
@@ -341,13 +364,28 @@
   .process,
   .mission,
   .working,
-  .team {
+  .team,
+  .advantages {
     padding: 64px 0;
+  }
+
+  .features {
+    padding-bottom: 64px;
+
+    &__img {
+      display: none;
+    }
   }
 
   .projects {
     &__item-minbox {
       padding: 15px;
+    }
+  }
+
+  .advantages {
+    &__item-box {
+      flex-direction: column;
     }
   }
 }
