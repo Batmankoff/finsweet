@@ -52,6 +52,17 @@
     }
   }
 
+  .working {
+
+    &__items,
+    &__clients-links,
+    &__clients {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+
+  }
 }
 
 @media (max-width: 1220px) {
@@ -104,6 +115,13 @@
       max-width: 100%;
     }
   }
+
+  .process {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
 }
 
 
@@ -132,6 +150,17 @@
     }
   }
 
+  .about {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__content-text {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+  }
 
 }
 
@@ -148,8 +177,14 @@
 
 
 
-@media (max-width: 902px) {
+@media (max-width: 920px) {
   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
     .menu {
       order: 1;
       margin-right: 0;
@@ -220,6 +255,8 @@
   }
 
   .top {
+    padding-top: 96px;
+
     &__img {
       display: none;
     }
@@ -239,6 +276,27 @@
   .blog {
     &__items {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .about {
+    margin-top: 96px;
+  }
+
+  .mission {
+    &__item {
+      flex-direction: column-reverse;
+    }
+
+    &__item+.mission__item {
+      margin-top: 48px;
+    }
+  }
+
+  .team {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }
@@ -278,7 +336,12 @@
   .reviews,
   .questions,
   .inquiry,
-  .blog {
+  .blog,
+  .about,
+  .process,
+  .mission,
+  .working,
+  .team {
     padding: 64px 0;
   }
 
@@ -338,6 +401,19 @@
 
 }
 
+@media (max-width: 660px) {
+  .we {
+    &__items {
+      flex-direction: column;
+      gap: 30px;
+      padding: 40px 0;
+    }
+
+    &__item {
+      max-width: 100%;
+    }
+  }
+}
 
 @media (max-width: 640px) {
   .stages {
@@ -457,7 +533,13 @@
     }
   }
 
+  .about {
+    &__content-title {
+      font-size: 44px;
+      line-height: 64px;
+    }
 
+  }
 }
 
 @media (max-width: 520px) {
