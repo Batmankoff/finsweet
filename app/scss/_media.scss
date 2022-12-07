@@ -384,11 +384,11 @@
   .portfolio,
   .order,
   .featured-blog,
-  .contact
-   {
+  .contact {
     padding: 64px 0;
   }
-  .blog-one{
+
+  .blog-one {
     padding-bottom: 64px;
   }
 
@@ -576,56 +576,73 @@
   }
 
   .projects {
+    &__item {
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        max-width: 405px;
+        margin: 0 auto;
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+
+      &__item-minbox {
+        padding: 15px;
+      }
+
+    }
     &__item-minbox {
-      padding: 15px;
+      justify-content: center;
     }
 
-    &__item-title {
-      font-size: 18px;
-      line-height: 24px;
-    }
-  }
-
-  .design {
-    &__title {
-      font-size: 38px;
-      line-height: 52px;
-    }
-  }
-
-  .inquiry {
-    &__send {
-      padding: 10px;
+    .projects__item-bigbox {
+      .projects__item-text {
+        display: none;
+      }
     }
 
-    &__send-input {
-      max-width: 432px;
-      width: 100%;
-      padding: 10px;
+    .design {
+      &__title {
+        font-size: 38px;
+        line-height: 52px;
+      }
     }
 
-    &__send-btn {
-      padding: 16px 48px;
-    }
-  }
+    .inquiry {
+      &__send {
+        padding: 10px;
+      }
 
-  .about {
-    &__content-title {
-      font-size: 44px;
-      line-height: 64px;
+      &__send-input {
+        max-width: 432px;
+        width: 100%;
+        padding: 10px;
+      }
+
+      &__send-btn {
+        padding: 16px 48px;
+      }
     }
 
-  }
+    .about {
+      &__content-title {
+        font-size: 44px;
+        line-height: 64px;
+      }
 
-  .order {
-    &__title {
-      font-size: 42px;
-      line-height: 58px;
     }
-  }
-  .contact {
-    &__form {
-      padding: 30px;
+
+    .order {
+      &__title {
+        font-size: 42px;
+        line-height: 58px;
+      }
+    }
+
+    .contact {
+      &__form {
+        padding: 30px;
+      }
     }
   }
 }
@@ -762,9 +779,10 @@
       line-height: 1;
     }
   }
-    .contact {
-   &__input {
-    padding: 16px;
-   }
+
+  .contact {
+    &__input {
+      padding: 16px;
+    }
   }
 }
