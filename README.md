@@ -1,4 +1,9 @@
 <h1> finsweet</h1>
-#HTML, SCSS, Gulp, Slick-slider, mixitup
+  <li>HTML</li>
+  <li>SCSS</li>
+  <li>Gulp</li>
+  <li>Slick-slider</li>
+  <li> mixitup</li>
+</ul>
 <br>
 <p>A landing page for foreign language school. Github pages:<a href="https://batmankoff.github.io/finsweet/dist/index.html"  target="_blank">link</a> </p>
