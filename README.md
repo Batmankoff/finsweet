@@ -1,5 +1,5 @@
 <h1> finsweet</h1>
-<a href="https://batmankoff.github.io/finsweet/dist/index.html"  target="_blank">link</a>
+<p>Github pages:<a href="https://batmankoff.github.io/finsweet/dist/index.html"  target="_blank">link</a> </p>
 <br>
 <ul>
   <li>HTML</li>
