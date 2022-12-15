@@ -1,5 +1,5 @@
 <h1> finsweet</h1>
-<p>A landing page for foreign language school. Github pages:<a href="https://batmankoff.github.io/finsweet/dist/index.html"  target="_blank">link</a> </p>
+<a href="https://batmankoff.github.io/finsweet/dist/index.html"  target="_blank">link</a>
 <br>
 <ul>
   <li>HTML</li>
