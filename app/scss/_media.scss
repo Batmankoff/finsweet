@@ -557,6 +557,13 @@
     &__contacts {
       padding: 16px;
     }
+
+    &__social-link {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   .footer-bottom {
@@ -591,6 +598,7 @@
       }
 
     }
+
     &__item-minbox {
       justify-content: center;
     }
@@ -601,53 +609,76 @@
       }
     }
 
-    .design {
-      &__title {
-        font-size: 38px;
-        line-height: 52px;
+  }
+
+  .portfolio {
+    &__social-link {
+      svg {
+        height: 30px;
+        width: 30px;
       }
     }
+  }
 
-    .inquiry {
-      &__send {
-        padding: 10px;
-      }
+  .design {
+    &__title {
+      font-size: 38px;
+      line-height: 52px;
+    }
+  }
 
-      &__send-input {
-        max-width: 432px;
-        width: 100%;
-        padding: 10px;
-      }
-
-      &__send-btn {
-        padding: 16px 48px;
-      }
+  .inquiry {
+    &__send {
+      padding: 10px;
     }
 
-    .about {
-      &__content-title {
-        font-size: 44px;
-        line-height: 64px;
-      }
-
+    &__send-input {
+      max-width: 432px;
+      width: 100%;
+      padding: 10px;
     }
 
-    .order {
-      &__title {
-        font-size: 42px;
-        line-height: 58px;
-      }
+    &__send-btn {
+      padding: 16px 48px;
+    }
+  }
+
+  .about {
+    &__content-title {
+      font-size: 44px;
+      line-height: 64px;
     }
 
-    .contact {
-      &__form {
-        padding: 30px;
-      }
+  }
+
+  .order {
+    &__title {
+      font-size: 42px;
+      line-height: 58px;
+    }
+  }
+
+  .contact {
+    &__form {
+      padding: 30px;
     }
   }
 }
 
+
+
 @media (max-width: 520px) {
+  .menu {
+    &__list {
+      padding-bottom: 15px;
+    }
+
+    &__list-link {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
   .questions {
     &__item-box {
       position: relative;
@@ -783,6 +814,11 @@
   .contact {
     &__input {
       padding: 16px;
+    }
+
+    &__btn {
+      width: 100%;
+      padding: 16px 0;
     }
   }
 }
